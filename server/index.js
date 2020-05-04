@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
-app.use(express.static("./Public"));
+//app.use("/static", express.static("./Public"));
 
 io.on("connection", (socket) => {
   socket.on("join", ({ name, room }, callback) => {
