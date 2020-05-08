@@ -11,7 +11,13 @@ const Movie = () => {
         <ul>
           <li>
             <figure>
-              <img src="../img/avengers.jpg" alt="Avengers movie Promo"></img>
+              <Link to={`/join?room=avengers`}>
+                <img
+                  className="poster"
+                  src="../img/avengers.jpg"
+                  alt="Avengers movie Promo"
+                ></img>
+              </Link>
             </figure>
           </li>
           <li>

@@ -34,6 +34,8 @@ h1 {
 .moviePosters > ul {
   --auto-grid-min-size: 16rem;
   display: grid;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: repeat(
     auto-fill,
     minmax(var(--auto-grid-min-size), 1fr)
@@ -51,5 +53,9 @@ h1 {
 }
 
 .moviePosters > ul > li > figure > img {
+  width: 100%;
+}
+
+.poster {
   width: 100%;
 }
