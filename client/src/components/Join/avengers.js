@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from "react";
-import queryString from "query-string";
 import { Link } from "react-router-dom";
 
 import "./Join.css";
 
-const Join = () => {
+const Avengers = () => {
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
 
   useEffect(() => {
-    const { room } = queryString.parse(window.location.search);
-
-    setRoom(room);
+    setRoom("Avengers");
   }, []);
   console.log(room);
   return (
     <div className="joinOuterContainer">
+      <div className="title">
+        <h1 className="heading">Join the Avengers chatroom!</h1>
+      </div>
       <div className="joinInnerContainer">
-        <h1 className="heading">Join the {room} chatroom!</h1>
         <div>{/* Sets name of user */}</div>
         <div>
+          <p></p>
           {/* Sets chatroom name */}
           <input
             placeholder="User Name"
@@ -42,4 +42,4 @@ const Join = () => {
   );
 };
 
-export default Join;
+export default Avengers;

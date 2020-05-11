@@ -15,11 +15,13 @@ body {
 
 .joinOuterContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   height: 100vh;
   align-items: center;
   background-color: #1a1a1d;
+  padding: 1rem;
 }
 
 .joinInnerContainer {
@@ -37,6 +39,7 @@ body {
   font-size: 2.5em;
   padding-bottom: 10px;
   border-bottom: 2px solid white;
+  width: auto;
 }
 
 .button {
