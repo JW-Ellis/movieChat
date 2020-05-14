@@ -15,7 +15,7 @@ body {
 
 .joinOuterContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   justify-content: center;
   text-align: center;
   height: 100vh;
@@ -24,7 +24,23 @@ body {
   padding: 1rem;
 }
 
+.posterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1rem;
+  width: 40%;
+}
+
+.joinPoster {
+  width: 68%;
+  margin-left: 10rem;
+}
+
 .joinInnerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 20%;
 }
 
@@ -34,9 +50,9 @@ body {
   width: 100%;
 }
 
-.heading {
+.joinTitle {
   color: white;
-  font-size: 2.5em;
+  font-size: 1.5em;
   padding-bottom: 10px;
   border-bottom: 2px solid white;
   width: auto;
@@ -61,9 +77,21 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
   .joinOuterContainer {
     height: 100%;
+    flex-direction: column;
   }
   .joinInnerContainer {
-    width: 90%;
+    width: 80%;
+    padding-top: 2rem;
+  }
+
+  .joinPoster {
+    width: 68%;
+    margin: 0;
+  }
+
+  .posterContainer {
+    padding: 0;
+    width: 100%;
   }
 }
 

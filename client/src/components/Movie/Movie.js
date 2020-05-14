@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import "./Movie.css";
@@ -13,7 +13,7 @@ const Movie = () => {
         <ul>
           <li>
             <figure>
-              <Link to={`/join?room=avengers`}>
+              <Link to={`/avengers`}>
                 <img
                   className="poster"
                   src="../img/avengers.jpg"
@@ -24,7 +24,7 @@ const Movie = () => {
           </li>
           <li>
             <figure>
-              <Link to={`/join?room=gonegirl`}>
+              <Link to={`/gonegirl`}>
                 <img
                   className="poster"
                   src="../img/gonegirl.jpg"
@@ -35,7 +35,7 @@ const Movie = () => {
           </li>
           <li>
             <figure>
-              <Link to={`/join?room=joker`}>
+              <Link to={`/joker`}>
                 <img
                   className="poster"
                   src="../img/joker.jpg"
@@ -46,7 +46,7 @@ const Movie = () => {
           </li>
           <li>
             <figure>
-              <Link to={`/join?room=midsommar`}>
+              <Link to={`/midsommar`}>
                 <img
                   className="poster"
                   src="../img/midsommar.jpg"
@@ -57,7 +57,7 @@ const Movie = () => {
           </li>
           <li>
             <figure>
-              <Link to={`/join?room=parasite`}>
+              <Link to={`/parasite`}>
                 <img
                   className="poster"
                   src="../img/parasite.jpg"
@@ -68,44 +68,11 @@ const Movie = () => {
           </li>
           <li>
             <figure>
-              <Link to={`/join?room=prestige`}>
-                <img
-                  className="poster"
-                  src="../img/prestige.jpg"
-                  alt="Prestige movie Promo"
-                ></img>
-              </Link>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <Link to={`/join?room=psycho`}>
-                <img
-                  className="poster"
-                  src="../img/psycho.jpg"
-                  alt="Psycho movie Promo"
-                ></img>
-              </Link>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <Link to={`/join?room=starwars`}>
+              <Link to={`/starwars`}>
                 <img
                   className="poster"
                   src="../img/starwars.jpg"
                   alt="Starwars movie Promo"
-                ></img>
-              </Link>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <Link to={`/join?room=tigerking`}>
-                <img
-                  className="poster"
-                  src="../img/tigerking.jpg"
-                  alt="Tiger King show Promo"
                 ></img>
               </Link>
             </figure>

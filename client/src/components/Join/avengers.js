@@ -10,14 +10,22 @@ const Avengers = () => {
   useEffect(() => {
     setRoom("Avengers");
   }, []);
-  console.log(room);
+
   return (
     <div className="joinOuterContainer">
-      <div className="title">
-        <h1 className="heading">Join the Avengers chatroom!</h1>
+      <div className="posterContainer">
+        <figure>
+          <img
+            className="joinPoster"
+            src="../img/avengers.jpg"
+            alt="Avengers movie promo"
+          />
+        </figure>
       </div>
       <div className="joinInnerContainer">
-        <div>{/* Sets name of user */}</div>
+        <div className="joinTitle">
+          <h1>Sign in! </h1>
+        </div>
         <div>
           <p></p>
           {/* Sets chatroom name */}
@@ -34,7 +42,7 @@ const Avengers = () => {
           to={`/chat?name=${name}&room=${room}`}
         >
           <button className="button mt-20" type="submit">
-            Sign In
+            Submit
           </button>
         </Link>
       </div>

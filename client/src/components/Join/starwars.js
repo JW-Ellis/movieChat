@@ -1,25 +1,32 @@
 import React, { useState, useEffect } from "react";
-import queryString from "query-string";
 import { Link } from "react-router-dom";
 
 import "./Join.css";
 
-const Join = () => {
+const StarWars = () => {
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
 
   useEffect(() => {
-    const { room } = queryString.parse(window.location.search);
-
-    setRoom(room);
+    setRoom("StarWars");
   }, []);
-  console.log(room);
   return (
     <div className="joinOuterContainer">
+      <div className="posterContainer">
+        <figure>
+          <img
+            className="joinPoster"
+            src="../img/starwars.jpg"
+            alt="StarWars movie promo"
+          />
+        </figure>
+      </div>
       <div className="joinInnerContainer">
-        <h1 className="heading">Join the {room} chatroom!</h1>
-        <div>{/* Sets name of user */}</div>
+        <div className="joinTitle">
+          <h1>Sign in! </h1>
+        </div>
         <div>
+          <p></p>
           {/* Sets chatroom name */}
           <input
             placeholder="User Name"
@@ -34,7 +41,7 @@ const Join = () => {
           to={`/chat?name=${name}&room=${room}`}
         >
           <button className="button mt-20" type="submit">
-            Sign In
+            Submit
           </button>
         </Link>
       </div>
@@ -42,4 +49,4 @@ const Join = () => {
   );
 };
 
-export default Join;
+export default StarWars;
