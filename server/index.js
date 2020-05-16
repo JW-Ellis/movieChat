@@ -4,11 +4,10 @@ const http = require("http");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-const { addUser, removeUser, getUser, getUsersInRoom } = require("./users.js");
-
 const PORT = process.env.PORT || 5000;
 
 const router = require("./router");
+const database = require("./database");
 
 const app = express();
 const server = http.createServer(app);
@@ -17,6 +16,8 @@ const io = socketio(server);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(bodyParser.json());
+
+const { addUser, removeUser, getUser, getUsersInRoom } = require("./users.js");
 
 io.on("connection", (socket) => {
   socket.on("join", ({ name, room }, callback) => {
@@ -66,6 +67,8 @@ io.on("connection", (socket) => {
     }
   });
 });
+
+database.on("error", console.error.bind(console, "MongoDB connection error:"));
 
 app.use(router);
 
