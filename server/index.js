@@ -71,5 +71,6 @@ io.on("connection", (socket) => {
 database.on("error", console.error.bind(console, "MongoDB connection error:"));
 
 app.use(router);
+app.use("/api", router);
 
 server.listen(PORT, () => console.log(`Server has started on port ${PORT}`));
