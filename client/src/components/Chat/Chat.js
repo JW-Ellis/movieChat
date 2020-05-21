@@ -15,10 +15,12 @@ const Chat = ({ location }) => {
   const [users, setUsers] = useState("");
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
+
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const ENDPOINT = "localhost:5000";
 
+  //sets username and chatroom name - pulls from query string
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
 
@@ -35,13 +37,7 @@ const Chat = ({ location }) => {
     };
   }, [ENDPOINT, location.search]);
 
-  /*   useEffect(() => {
-    //adds new messages to message array
-    socket.on("message", (message) => {
-      setMessages([...messages, message]);
-    });
-  }, [messages]); */
-
+  //adds new messages to message array
   useEffect(() => {
     socket.on("message", (message) => {
       setMessages((messages) => [...messages, message]);
@@ -62,8 +58,6 @@ const Chat = ({ location }) => {
     }
   };
 
-  console.log(message, messages);
-
   return (
     <div className="outerContainer">
       <div className="container">
@@ -75,7 +69,7 @@ const Chat = ({ location }) => {
           sendMessage={sendMessage}
         />
       </div>
-      <TextContainer users={users} />
+      <TextContainer users={users} room={room} />
     </div>
   );
 };

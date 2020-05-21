@@ -10,7 +10,7 @@ const GoneGirl = () => {
   useEffect(() => {
     setRoom("Gone Girl");
   }, []);
-  console.log(room);
+
   return (
     <div className="joinOuterContainer">
       <div className="posterContainer">

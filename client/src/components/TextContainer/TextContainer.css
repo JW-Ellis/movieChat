@@ -4,13 +4,13 @@
   margin-left: 100px;
   color: white;
   height: 60%;
-  justify-content: space-between;
+  width: 38%;
+  justify-content: space-around;
 }
 
 .activeContainer {
   display: flex;
   align-items: center;
-  margin-bottom: 50%;
 }
 
 .activeItem {
