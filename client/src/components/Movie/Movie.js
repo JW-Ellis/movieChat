@@ -6,8 +6,9 @@ import "./Movie.css";
 const Movie = () => {
   return (
     <div className="movieOuterContainer">
-      <div>
-        <h1>test</h1>
+      <div className="header">
+        <h1>MovieChat</h1>
+        <p>Join a room below to chat about your favorite movie!</p>
       </div>
       <section className="moviePosters" id="moviePosters">
         <ul>

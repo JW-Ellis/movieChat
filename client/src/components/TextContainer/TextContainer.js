@@ -17,7 +17,7 @@ const TextContainer = ({ users, room }) => {
       res.json().then((res) => setMovieData(res.data));
     }
 
-    //conditional that decides what movie data to pull
+    //conditional decides what movie data to pull
     const movieData = (movie) => {
       switch (movie) {
         case "Avengers":

@@ -12,6 +12,17 @@ body {
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans"),
+    url(../../fonts/OpenSans/OpenSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"),
+    url(../../fonts/Oswald/Oswald-Regular.ttf) format("truetype");
+}
 
 .movieOuterContainer {
   justify-content: center;
@@ -30,7 +41,12 @@ body {
 }
 
 h1 {
+  font-family: OpenSans;
   margin: 0;
+}
+
+p {
+  font-family: "Lucida Sans Unicode";
 }
 
 .moviePosters > ul {
@@ -60,4 +76,17 @@ h1 {
 
 .poster {
   width: 100%;
+}
+
+.header {
+  padding: 1rem;
+  color: white;
+}
+
+.header > p {
+  font-size: 1.1rem;
+}
+
+.header > h1 {
+  font-size: 3rem;
 }
