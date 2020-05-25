@@ -1,7 +1,14 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
+
+const connection = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/movie";
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/movie", { useNewUrlParser: true })
+  .connect(connection, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+  })
   .catch((e) => {
     console.log("Connection error", e.message);
   });

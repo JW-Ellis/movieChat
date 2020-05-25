@@ -10,7 +10,7 @@ const TextContainer = ({ users, room }) => {
   //pulls movie info from database
   useEffect(() => {
     const { room } = queryString.parse(window.location.search);
-    console.log(room, ": bingo");
+
     //fetches from database
     async function fetchData(id) {
       const res = await fetch(`http://localhost:5000/api/movie/${id}`);
