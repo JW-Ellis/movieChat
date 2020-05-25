@@ -60,6 +60,7 @@ p {
   );
   list-style-type: none;
   gap: 0.5rem;
+  padding: 0;
 }
 
 .moviePosters > ul > li > figure {
