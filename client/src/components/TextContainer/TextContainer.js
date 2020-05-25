@@ -21,17 +21,17 @@ const TextContainer = ({ users, room }) => {
     const movieData = (movie) => {
       switch (movie) {
         case "Avengers":
-          return fetchData("5ec1d39a65657107e890b382");
+          return fetchData("5ecb0c83eed51c00048116f6");
         case "Gone Girl":
-          return fetchData("5ec1d60b00010d4e5c28438e");
+          return fetchData("5ecb0cb1eed51c00048116f7");
         case "Joker":
-          return fetchData("5ec1d68f00010d4e5c28438f");
+          return fetchData("5ecb0d0deed51c00048116f8");
         case "Midsommar":
-          return fetchData("5ec1d73c00010d4e5c284390");
+          return fetchData("5ecb0d2eeed51c00048116f9");
         case "Parasite":
-          return fetchData("5ec1d79f00010d4e5c284391");
+          return fetchData("5ecb0d47eed51c00048116fa");
         case "StarWars":
-          return fetchData("5ec1d81b00010d4e5c284392");
+          return fetchData("5ecb0b1aeed51c00048116f5");
         default:
           return [];
       }
