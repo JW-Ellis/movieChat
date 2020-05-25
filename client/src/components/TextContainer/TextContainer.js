@@ -13,7 +13,9 @@ const TextContainer = ({ users, room }) => {
 
     //fetches from database
     async function fetchData(id) {
-      const res = await fetch(`http://localhost:5000/api/movie/${id}`);
+      const res = await fetch(
+        `https://moviechat-server.herokuapp.com/api/movie/${id}`
+      );
       res.json().then((res) => setMovieData(res.data));
     }
 
