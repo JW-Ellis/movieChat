@@ -18,7 +18,7 @@ const Chat = ({ location }) => {
 
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = "localhost:5000";
+  const ENDPOINT = "https://moviechat-server.herokuapp.com";
 
   //sets username and chatroom name - pulls from query string
   useEffect(() => {

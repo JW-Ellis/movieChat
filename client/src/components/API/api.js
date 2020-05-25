@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://moviechat-server.herokuapp.com/api",
 });
 
 export const getMovieByID = (id) => api.get(`/movie/${id}`);
