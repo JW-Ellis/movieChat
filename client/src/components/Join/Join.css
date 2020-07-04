@@ -20,6 +20,7 @@ body {
   text-align: center;
   height: 100vh;
   align-items: center;
+  background-image: url(../../Icons/tile.jpg);
   background-color: #1a1a1d;
   padding: 1rem;
 }
