@@ -45,14 +45,13 @@ const TextContainer = ({ users, room }) => {
   return (
     <div className="textContainer">
       {users ? (
-        <div>
-          <h1>People currently chatting:</h1>
+        <div className="users">
+          <h1>Current Audience</h1>
           <div className="activeContainer">
             <h2>
               {users.map(({ name }) => (
                 <div key={name} className="activeItem">
                   {name}
-                  <img alt="Online Icon" src={onlineIcon} />
                 </div>
               ))}
             </h2>
@@ -60,12 +59,20 @@ const TextContainer = ({ users, room }) => {
         </div>
       ) : null}
 
-      <div>
-        <h1> {movieData.title}</h1>
-        <p>Release Date: {movieData.releaseDate}</p>
-        <p>Rating: {movieData.rating}</p>
-        <p>Worldwide Gross: {movieData.gross}</p>
-        <p>{movieData.summary}</p>
+      <div className="movieData">
+        <img src="../img/avengers.jpg"></img>
+        <ul>
+          <li>
+            <span>RELEASED</span> {movieData.releaseDate}
+          </li>
+          <li>
+            <span>RATING</span> {movieData.rating}
+          </li>
+          <li>
+            <span>WORLD GROSS</span> {movieData.gross}
+          </li>
+          <li>{movieData.summary}</li>
+        </ul>
       </div>
     </div>
   );

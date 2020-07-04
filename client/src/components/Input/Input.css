@@ -1,13 +1,21 @@
 .form {
   display: flex;
+  height: 12%;
+  border: 2px solid #f1c880;
 }
 
 .input {
-  border: none;
+  background-color: #1a1a1d;
   border-radius: 0;
   padding: 5%;
   width: 80%;
   font-size: 1.2em;
+}
+
+.input,
+select,
+textarea {
+  color: #f1c880;
 }
 
 input:focus,
@@ -17,10 +25,12 @@ select:focus {
 }
 
 .sendButton {
-  color: #fff !important;
+  color: #1a1a1d !important;
+  font-weight: bold;
+  font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
-  background: #1b1c7b;
+  background: #f1c880;
   padding: 20px;
   display: inline-block;
   border: none;

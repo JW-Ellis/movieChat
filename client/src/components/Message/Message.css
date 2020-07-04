@@ -13,6 +13,7 @@
   float: left;
   font-size: 1.1em;
   word-wrap: break-word;
+  color: #f1c880;
 }
 
 .messageText img {
@@ -30,7 +31,7 @@
   display: flex;
   align-items: center;
   font-family: Helvetica;
-  color: #828282;
+  color: #f1c880;
   letter-spacing: 0.3px;
 }
 
@@ -51,17 +52,17 @@
 }
 
 .colorWhite {
-  color: white;
+  color: #f1c880;
 }
 
 .colorDark {
-  color: #353535;
+  color: #f1c880;
 }
 
 .backgroundBlue {
-  background: #2979ff;
+  background: #000000;
 }
 
 .backgroundLight {
-  background: #f3f3f3;
+  background: #2f2e33;
 }

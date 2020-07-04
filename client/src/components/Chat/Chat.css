@@ -5,16 +5,34 @@
   height: 100vh;
   background-image: url(../../Icons/tile.jpg);
   background-color: #1a1a1d;
+  overflow: auto;
 }
 
-.container {
+.leftContainer {
+  width: 35%;
+  height: 60%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #f1c880;
+  text-transform: uppercase;
+}
+
+.chatContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #ffffff;
-  border-radius: 8px;
-  height: 60%;
-  width: 35%;
+  background: #1a1a1d;
+  border: 3.5px solid #f1c880;
+  height: 100%;
+  width: 100%;
+}
+
+.ticket {
+  content: url(../../Icons/logo.png);
+  width: 12%;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -22,7 +40,12 @@
     height: 100%;
   }
 
-  .container {
+  .leftContainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .chatContainer {
     width: 100%;
     height: 100%;
   }
