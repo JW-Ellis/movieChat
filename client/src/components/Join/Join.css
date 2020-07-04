@@ -14,14 +14,18 @@ body {
 }
 
 .joinOuterContainer {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  text-align: center;
   height: 100vh;
-  align-items: center;
   background-image: url(../../Icons/tile.jpg);
   background-color: #1a1a1d;
+}
+
+.signIn {
+  display: flex;
+  margin-top: 6%;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 1rem;
 }
 
@@ -46,24 +50,35 @@ body {
 }
 
 .joinInput {
-  border-radius: 0;
+  border: 3px solid #f1c880;
+  color: #f1c880;
   padding: 15px 20px;
   width: 100%;
+  background-color: #1a1a1d;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 .joinTitle {
-  color: white;
-  font-size: 1.5em;
-  padding-bottom: 10px;
-  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: center;
   width: auto;
 }
 
+.admit {
+  content: url(../../Icons/admit.png);
+  width: 85%;
+}
+
 .button {
-  color: #fff !important;
+  color: #1a1a1d !important;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   text-decoration: none;
-  background: #1b1c7b;
+  background: #f1c880;
   padding: 20px;
   border-radius: 5px;
   display: inline-block;
@@ -71,18 +86,46 @@ body {
   width: 100%;
 }
 
+.secondaryHeader {
+  padding: 1rem;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.secondaryImg {
+  position: relative;
+  float: left;
+  left: 16%;
+  top: 50px;
+  content: url(../../Icons/logo.png);
+  height: 100%;
+  width: 6%;
+}
+
 .mt-20 {
   margin-top: 20px;
 }
 
+::placeholder {
+  color: #f1c880;
+  opacity: 1;
+}
+
 @media (min-width: 320px) and (max-width: 500px) {
-  .joinOuterContainer {
-    height: 100%;
+  .signIn {
     flex-direction: column;
   }
   .joinInnerContainer {
     width: 80%;
     padding-top: 2rem;
+  }
+
+  .secondaryImg {
+    position: relative;
+    left: 8%;
+    top: 32px;
+    width: 13%;
   }
 
   .joinPoster {
