@@ -7,8 +7,7 @@ const Movie = () => {
   return (
     <div className="movieOuterContainer">
       <div className="header">
-        <h1>MovieChat</h1>
-        <p>Join a room below to chat about your favorite movie!</p>
+        <div className="headerImg"></div>
       </div>
       <section className="moviePosters" id="moviePosters">
         <ul>

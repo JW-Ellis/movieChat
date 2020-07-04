@@ -36,7 +36,7 @@ body {
 }
 
 .moviePosters {
-  max-width: 65rem;
+  max-width: 72rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -51,7 +51,7 @@ p {
 }
 
 .moviePosters > ul {
-  --auto-grid-min-size: 16rem;
+  --auto-grid-min-size: 20rem;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -67,8 +67,7 @@ p {
 .moviePosters > ul > li > figure {
   max-height: 100%;
   overflow: hidden;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-radius: 0.5rem;
   position: relative;
 }
 
@@ -81,14 +80,14 @@ p {
 }
 
 .header {
+  display: flex;
+  justify-content: center;
   padding: 1rem;
-  color: white;
+  width: 100%;
 }
 
-.header > p {
-  font-size: 1.1rem;
-}
+.headerImg {
+  content: url(../../Icons/header.png);
 
-.header > h1 {
-  font-size: 3rem;
+  height: 100%;
 }
