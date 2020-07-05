@@ -27,12 +27,23 @@ select:focus {
 .sendButton {
   color: #1a1a1d !important;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 0.2rem;
   background: #f1c880;
   padding: 20px;
   display: inline-block;
   border: none;
   width: 20%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .form {
+    height: 8%;
+  }
+
+  .sendButton {
+    width: 30%;
+  }
 }
