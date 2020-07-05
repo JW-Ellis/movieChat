@@ -60,7 +60,7 @@ const TextContainer = ({ users, room }) => {
       ) : null}
 
       <div className="movieData">
-        <img src="../img/avengers.jpg"></img>
+        <img src={movieData.poster}></img>
         <ul>
           <li>
             <span>RELEASED</span> {movieData.releaseDate}
