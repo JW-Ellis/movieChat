@@ -7,6 +7,7 @@ const Movie = new Schema({
   gross: { type: String, required: true },
   releaseDate: { type: String, required: true },
   summary: { type: String, required: true },
+  poster: { type: String, require: true },
 });
 
 module.exports = mongoose.model("movies", Movie);
