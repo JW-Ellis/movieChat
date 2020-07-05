@@ -61,7 +61,9 @@ const Chat = ({ location }) => {
   return (
     <div className="outerContainer">
       <div className="leftContainer">
-        <div className="ticket"></div>
+        <a href="/">
+          <div className="ticket"></div>
+        </a>
         <h1>Now showing</h1>
         <InfoBar room={room} />
         <div className="chatContainer">

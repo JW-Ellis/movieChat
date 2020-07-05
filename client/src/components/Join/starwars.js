@@ -13,7 +13,9 @@ const StarWars = () => {
   return (
     <div className="joinOuterContainer">
       <div className="secondaryHeader">
-        <div className="secondaryImg"></div>
+        <a href="/">
+          <div className="secondaryImg"></div>
+        </a>
       </div>
       <div className="signIn">
         <div className="posterContainer">
