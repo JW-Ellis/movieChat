@@ -77,6 +77,73 @@ const Movie = () => {
               </Link>
             </figure>
           </li>
+
+          <li>
+            <figure>
+              <Link to={`/drive`}>
+                <img
+                  className="poster"
+                  src="../img/drive.jpg"
+                  alt="Drive movie Promo"
+                ></img>
+              </Link>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <Link to={`/rings`}>
+                <img
+                  className="poster"
+                  src="../img/rings.jpg"
+                  alt="The Lord of the Rings movie Promo"
+                ></img>
+              </Link>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <Link to={`/oldboy`}>
+                <img
+                  className="poster"
+                  src="../img/oldboy.jpg"
+                  alt="Oldboy movie Promo"
+                ></img>
+              </Link>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <Link to={`/terminator`}>
+                <img
+                  className="poster"
+                  src="../img/terminator.jpg"
+                  alt="The Terminator movie Promo"
+                ></img>
+              </Link>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <Link to={`/thing`}>
+                <img
+                  className="poster"
+                  src="../img/thing.jpg"
+                  alt="The Thing movie Promo"
+                ></img>
+              </Link>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <Link to={`/monty`}>
+                <img
+                  className="poster"
+                  src="../img/monty.jpg"
+                  alt="Monty Python and the Holy Grail movie Promo"
+                ></img>
+              </Link>
+            </figure>
+          </li>
         </ul>
       </section>
     </div>
