@@ -36,6 +36,16 @@ const TextContainer = ({ users, room }) => {
           return fetchData("5ecb0b1aeed51c00048116f5");
         case "Drive":
           return fetchData("5f025cb52093ec000486e8e6");
+        case "Lord of the Rings":
+          return fetchData("5f025f9cb06a6500041d7632");
+        case "Oldboy":
+          return fetchData("5f026164b06a6500041d7633");
+        case "Terminator":
+          return fetchData("5f02630eb06a6500041d7634");
+        case "Thing":
+          return fetchData("5f0263afb06a6500041d7635");
+        case "Monty Python and the Holy Grail":
+          return fetchData("5f026492b06a6500041d7636");
         default:
           return [];
       }

@@ -8,7 +8,7 @@ const Rings = () => {
   const [room, setRoom] = useState("");
 
   useEffect(() => {
-    setRoom("The Lord of the Rings");
+    setRoom("Lord of the Rings");
   }, []);
 
   return (
