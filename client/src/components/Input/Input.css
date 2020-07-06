@@ -10,6 +10,7 @@
   padding: 5%;
   width: 80%;
   font-size: 1.2em;
+  border: none;
 }
 
 .input,
@@ -33,9 +34,11 @@ select:focus {
   letter-spacing: 0.2rem;
   background: #f1c880;
   padding: 20px;
-  display: inline-block;
+  display: flex;
   border: none;
   width: 20%;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

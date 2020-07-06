@@ -27,6 +27,7 @@ li {
 
 .movieData > ul {
   padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .activeContainer {
@@ -51,6 +52,7 @@ li {
 }
 
 .textContainer h2 {
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
 }
 

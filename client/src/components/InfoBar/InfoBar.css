@@ -1,5 +1,6 @@
 .infoBar {
   height: auto;
+  font-family: "Montserrat", sans-serif;
   width: 100%;
   color: #f1c880;
   text-transform: uppercase;
@@ -9,6 +10,7 @@
 }
 
 .infoBar > p {
+  font-family: "Montserrat", sans-serif;
   margin: 0.5rem 0;
   font-size: 1.9rem;
 }

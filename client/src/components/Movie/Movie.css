@@ -24,6 +24,12 @@ body {
     url(../../fonts/Oswald/Oswald-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(../../fonts/Montserrat/Montserrat-Light.ttf) format("truetype");
+}
+
 .movieOuterContainer {
   justify-content: center;
   text-align: center;
