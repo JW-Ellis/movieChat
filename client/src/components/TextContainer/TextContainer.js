@@ -23,29 +23,29 @@ const TextContainer = ({ users, room }) => {
     const movieData = (movie) => {
       switch (movie) {
         case "Avengers":
-          return fetchData("5ecb0c83eed51c00048116f6");
+          return fetchData("5fab63dce7fa540004c56117"); 
         case "Gone Girl":
-          return fetchData("5ecb0cb1eed51c00048116f7");
+          return fetchData("5fab6364e7fa540004c56116"); 
         case "Joker":
-          return fetchData("5ecb0d0deed51c00048116f8");
+          return fetchData("5fab62c7e7fa540004c56115");
         case "Midsommar":
-          return fetchData("5ecb0d2eeed51c00048116f9");
+          return fetchData("5fab6252e7fa540004c56114");
         case "Parasite":
-          return fetchData("5ecb0d47eed51c00048116fa");
+          return fetchData("5fab61f3e7fa540004c56113");
         case "StarWars":
-          return fetchData("5ecb0b1aeed51c00048116f5");
+          return fetchData("5fab616be7fa540004c56112");
         case "Drive":
-          return fetchData("5f025cb52093ec000486e8e6");
+          return fetchData("5fab60fde7fa540004c56111");
         case "Lord of the Rings":
-          return fetchData("5f025f9cb06a6500041d7632");
+          return fetchData("5fab6082e7fa540004c56110");
         case "Oldboy":
-          return fetchData("5f026164b06a6500041d7633");
+          return fetchData("5fab5f2fe7fa540004c5610f");
         case "Terminator":
-          return fetchData("5f02630eb06a6500041d7634");
+          return fetchData("5fab5e6fe7fa540004c5610e");
         case "Thing":
-          return fetchData("5f0263afb06a6500041d7635");
+          return fetchData("5fab5df1e7fa540004c5610d");
         case "Monty Python and the Holy Grail":
-          return fetchData("5f026492b06a6500041d7636");
+          return fetchData("5fab5c89e7fa540004c5610c");
         default:
           return [];
       }
