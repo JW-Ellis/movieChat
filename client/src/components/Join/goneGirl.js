@@ -33,7 +33,7 @@ const GoneGirl = () => {
             <div className="admit"></div>
           </div>
           <div>
-            <p></p>
+            
             {/* Sets chatroom name */}
             <input
               placeholder="User Name"
